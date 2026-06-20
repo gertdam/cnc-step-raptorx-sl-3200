@@ -252,6 +252,15 @@ nav.main a:hover{color:var(--text-primary)}
 .trust-note{display:flex;gap:13px;align-items:center;justify-content:center;flex-wrap:wrap;text-align:center;
   background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px 24px;color:var(--text-secondary);font-size:.95rem}
 .trust-note svg{width:22px;height:22px;color:var(--accent);flex-shrink:0}
+.docs-row{margin-top:var(--s6);text-align:center}
+.docs-title{font-size:1.05rem;margin-bottom:16px;color:var(--text-primary)}
+.docs-list{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.doc-link{display:inline-flex;align-items:center;gap:12px;background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:14px 20px;color:var(--text-primary);transition:transform .25s var(--ease),border-color .25s}
+.doc-link:hover{transform:translateY(-2px);border-color:var(--accent)}
+.doc-link:focus-visible{outline:none;box-shadow:var(--ring)}
+.doc-link svg{width:22px;height:22px;color:var(--accent);flex-shrink:0}
+.doc-link .doc-name{font-weight:500;font-size:.95rem}
+.doc-link .doc-meta{font-size:.72rem;color:var(--text-muted);border:1px solid var(--border);border-radius:4px;padding:2px 6px}
 
 /* Contact */
 .contact{background:linear-gradient(180deg,var(--bg-secondary),var(--bg-primary))}
@@ -604,6 +613,21 @@ footer .fnote{font-size:.78rem;max-width:70ch;margin:10px auto 0}
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
       <span data-i18n="tr.note">Vorführung unter Strom nach Vereinbarung möglich. Abholung, Demontage und Transport nach Absprache.</span>
     </div>
+    <div class="docs-row" data-reveal>
+      <h3 class="docs-title" data-i18n="docs.title">Dokumente</h3>
+      <div class="docs-list">
+        <a class="doc-link" href="assets/docs/cnc-step-invoice-2017-anonymized.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
+          <span class="doc-name" data-i18n="docs.invoice2017">Originalrechnung 2017 (CNC-Step, anonymisiert)</span>
+          <span class="doc-meta">PDF</span>
+        </a>
+        <a class="doc-link" href="assets/docs/vcarve-pro-invoice-2024.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
+          <span class="doc-name" data-i18n="docs.invoice2024">VCarve Pro Lizenzrechnung (2024)</span>
+          <span class="doc-meta">PDF</span>
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -712,6 +736,7 @@ const I18N = {
     "tr.eyebrow":"Herkomst & bewijs","tr.title":"Gedocumenteerd en navolgbaar","tr.sub":"Eerste inbedrijfstelling door de fabrikant, serienummers en licentie — alles aantoonbaar.",
     "tr.1t":"Serienummer machine","tr.2t":"CNC-Step typeplaatje","tr.2p":"Originele fabrikant (Geldern, DE)","tr.3t":"Serienummer spindel","tr.4t":"KinetiC-NC licentie","tr.4p":"Onbeperkte volledige versie",
     "tr.note":"Demonstratie onder spanning op afspraak mogelijk. Ophalen, demontage en transport in overleg.",
+    "docs.title":"Documenten","docs.invoice2017":"Originele factuur 2017 (CNC-Step, geanonimiseerd)","docs.invoice2024":"VCarve Pro licentiefactuur (2024)",
     "ct.eyebrow":"Contact","ct.title":"Interesse in deze machine?","ct.text":"Stuur ons een bericht voor meer informatie, foto's of een bezichtiging — wij reageren snel.",
     "ct.btn":"E-mail sturen","ct.country":"Nederland","ct.loc":"Bezichtiging & ophalen op afspraak","ct.locLabel":"Locatie",
     "ft.vat":"Alle prijzen netto, excl. btw.","ft.note":"CNC-Step en RaptorX-SL zijn producten van CNC-Step GmbH & Co. KG. Deze pagina is een onafhankelijk verkoopaanbod voor een gebruikte machine.",
@@ -770,6 +795,7 @@ const I18N = {
     "tr.eyebrow":"Provenance & proof","tr.title":"Documented and verifiable","tr.sub":"First commissioning by the manufacturer, serial numbers and license — all documented.",
     "tr.1t":"Machine serial number","tr.2t":"CNC-Step manufacturer plate","tr.2p":"Original manufacturer (Geldern, DE)","tr.3t":"Spindle serial number","tr.4t":"KinetiC-NC license","tr.4p":"Unlimited full version",
     "tr.note":"Live demonstration under power by appointment. Collection, dismantling and transport by arrangement.",
+    "docs.title":"Documents","docs.invoice2017":"Original 2017 invoice (CNC-Step, anonymized)","docs.invoice2024":"VCarve Pro license invoice (2024)",
     "ct.eyebrow":"Contact","ct.title":"Interested in this machine?","ct.text":"Get in touch for more information, photos or to arrange a viewing — we reply promptly.",
     "ct.btn":"Send email","ct.country":"The Netherlands","ct.loc":"Viewing & collection by appointment","ct.locLabel":"Location",
     "ft.vat":"All prices net, excl. VAT.","ft.note":"CNC-Step and RaptorX-SL are products of CNC-Step GmbH & Co. KG. This page is an independent sales offer for a used machine.",

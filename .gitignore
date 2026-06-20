@@ -18,3 +18,8 @@ do-not-use original images/
 # Workspace-internal notes (not part of the published site)
 RaptorX-SL_3200-S20_advertentie_machineseeker.md
 cnc machine details.txt
+
+# Source documents — originals contain private buyer/seller data (incl. the
+# un-anonymized 2017 invoice). Only approved, anonymized copies placed in
+# assets/docs/ get published.
+documents/
