@@ -47,7 +47,7 @@ MAPPING = {
     "kinetic nc registration 1st owner.jpg": "kinetic-registration",
 }
 
-HERO_SRC = "cnc front.jpg"
+HERO_SRC = "cnc back.jpg"
 PII_SRC = "kinetic nc registration 1st owner.jpg"
 
 # PII redaction box as fractions of (width, height) of the upright image.
