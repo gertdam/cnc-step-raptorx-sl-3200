@@ -1,0 +1,20 @@
+# Secrets — never commit
+.env
+
+# macOS
+.DS_Store
+
+# Python
+*.pyc
+__pycache__/
+venv/
+
+# Raw, unoptimized source photos. These include the ORIGINAL KinetiC-NC license
+# screenshot with the previous owner's PII. Only the optimized + redacted images
+# in assets/ are published. Keep these locally to re-run scripts/optimize-images.py.
+images/
+do-not-use original images/
+
+# Workspace-internal notes (not part of the published site)
+RaptorX-SL_3200-S20_advertentie_machineseeker.md
+cnc machine details.txt
